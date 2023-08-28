@@ -10,4 +10,7 @@ echo "unqualified-search-registries = ["quay.io", "registry.access.redhat.com", 
 echo "redhat" | sudo -S sleep 1 && sudo su - rhel
 
 # Se descarga imagen hello-world
-podman pull quay.io/rh-ee-savazque/hello-world:latest && clear
+podman pull quay.io/rh-ee-savazque/hello-world:latest
+
+# Se clona el repo del meetup
+git clone https://github.com/SaulVazquezRedHat/meetup-podman-repo.git && clear
