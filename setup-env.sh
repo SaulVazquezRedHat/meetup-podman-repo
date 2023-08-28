@@ -8,3 +8,6 @@ echo "unqualified-search-registries = ["quay.io", "registry.access.redhat.com", 
 
 # Se cambia a usuario no-root
 echo "redhat" | sudo -S sleep 1 && sudo su - rhel
+
+# Se descarga imagen hello-world
+podman pull quay.io/rh-ee-savazque/hello-world:latest && clear
