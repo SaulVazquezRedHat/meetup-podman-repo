@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Se instala Podman
-yum install podman
+yum install podman -y
 
 # Se configuran los registries
 echo "unqualified-search-registries = ["quay.io", "registry.access.redhat.com", "registry.redhat.io", "docker.io"]" > /etc/containers/registries.conf
