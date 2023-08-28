@@ -8,7 +8,4 @@ echo "unqualified-search-registries = ["quay.io", "registry.access.redhat.com", 
 
 # Se cambia a usuario no-root
 su rhel && \
-cd && \
-
-# Se limpia terminal
-clear
+cd /home/rhel && clear
