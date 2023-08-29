@@ -10,5 +10,3 @@ su rhel
 cd
 
 podman pull quay.io/rh-ee-savazque/hello-world:latest
-
-git clone https://github.com/SaulVazquezRedHat/meetup-podman-repo.git
