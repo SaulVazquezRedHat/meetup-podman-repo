@@ -7,10 +7,7 @@ yum install podman -y
 echo 'unqualified-search-registries = ["quay.io", "registry.access.redhat.com", "registry.redhat.io", "docker.io"]' > /etc/containers/registries.conf
 
 # Se descarga imagen hello-world
-podman pull quay.io/rh-ee-savazque/hello-world:latest
+su -c 'podman pull quay.io/rh-ee-savazque/hello-world:latest' rhel
 
 # Se clona el repo del meetup
-git clone https://github.com/SaulVazquezRedHat/meetup-podman-repo.git /home/rhel/meetup-podman-repo
-
-# Se cambia a usuario no-root
-echo "redhat" | sudo -S sleep 1 && sudo su - rhel
+su -c 'git clone https://github.com/SaulVazquezRedHat/meetup-podman-repo.git /home/rhel/meetup-podman-rhel' rhel
